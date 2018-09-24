@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+    <title>Falling Objects Game</title>
+</head>
+
+<body>
+
+
+    <!--Info for Falling apple Game. Hidden at Start-->
+
+    <div class="apple-info">
+        <h1>Pick the Apples!</h1>
+        <p>Click the fresh apples to harvest them for autumn. Avoid the rotten ones or you will lose points!</p>
+        <h3>Choose Your Difficulty</h3>
+        <p>
+
+            <div class="mode-options">
+                <div id="start"> <button class="easyGame start">Easy</button></div>
+
+                <div id="start"> <button class="mediumGame start">Medium</button></div>
+
+                <div id="start"> <button class="hardGame start">Hard</button></div>
+                  
+            </div>
+        </p>
+        <p>High<br>Score</p>
+        <div class="high-score">0</div>
+    </div>
+
+    <div class="game">
+        <div class="counter" id="counter">00s</div>
+
+
+        <div class="score">
+            00
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

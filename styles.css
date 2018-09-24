@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.game{
+    background: url('apple-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 657px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .score{
+    font-size: 500px;
+    z-index: 20;
+    font-family: arial;
+    color: #d7e4d994;
+    user-select:none;
+    width:100%;
+    text-align:center;
+  }  
+
+  .box{
+  
+    width: 100px;
+    height:100px;
+    position:absolute;
+    top: -150px;
+    transition: transform 1.5s linear;
+    cursor: pointer;
+    z-index:100;
+  }
+  
+  .move{
+     transform:translateY(120vh);
+  }
+  
+  .counter{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: arial;
+    color: rgb(255, 123, 0);
+    font-weight:bold;
+    padding-top:10px;
+    font-size: 30px;
+    position: relative;
+    z-index: 9999;
+  }
+  
+  /*Intro Ccontainers*/
+
+  .apple-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 66.6%;
+    background: white;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 10%;
+    left: 16.5%;
+    z-index: 3;
+    border-radius: 10px;
+    border: 5px solid black;
+    height: 75%;
+    font-family: 'Chicle', cursive;
+  }
+
+  .mode-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 450px;
+  }
+
+  .start {
+    padding: 10px 20px;
+    font-size: 20px;
+    outline: none;
+    background-color: #CD5331;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 9px rgb(77, 75, 75);
+    text-shadow: 1px 1px rgb(77, 75, 75);
+  }
+
+  .start:hover{
+    background-color: rgba(197, 48, 6, 0.993);
+    color: white;
+    box-shadow: 0 9px rgb(49, 48, 48);
+  }
+  
+  .start:active{
+    background-color: rgba(197, 48, 6, 0.993);
+    box-shadow: 0 5px rgb(26, 25, 25);
+    transform: translateY(4px);
+  }
+
+
+
+
